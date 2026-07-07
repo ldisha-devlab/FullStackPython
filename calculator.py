@@ -1,0 +1,10 @@
+product1=input("Enter the product name1:")
+product2=input("enter the product name2:")
+Quantity=int(input("Enter the quantity of product1:"))
+Quantity2=int(input("Enter the quantity of product2:"))
+product1_price=int(input("Enter the price of product1:"))
+product2_price=int(input("Enter the price of product2:"))
+total=(product1_price*Quantity)+(product2_price*Quantity2)
+print(f"Total price: {total}")
+discount=total-50
+print("Discount price:",discount)

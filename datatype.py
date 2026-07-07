@@ -1,4 +1,4 @@
-print("Student Details:")
+print("Student Detail:")
 u_name=input("Enter a user name detail:")
 print(u_name)
 age=int(input("Enter your age:"))
