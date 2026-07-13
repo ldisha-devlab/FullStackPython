@@ -73,29 +73,27 @@ Sparrow.sound()
 # Abstraction means hiding internal implementation and
 # Showing only necessary features to the user
 
-# from abc import ABC,abstractmethod
-# class vehicle(ABC):
-#     @abstractmethod
-#     def start(self):
-#         pass
+from abc import ABC,abstractmethod
+class vehicle(ABC):
+    @abstractmethod
+    def start(self):
+        pass
 
-# class car(vehicle):
-#     def start(self):
-#         print("Car started")
-# car=car()
-# car.start()
+class car(vehicle):
+    def start(self):
+        print("Car started")
+car=car()
+car.start()
 
-
-from  abc import ABC,abstractmethod
-class dog(ABC):
+from abc import ABC,abstractmethod
+class animal(ABC):
     @abstractmethod
     def sound(self):
         pass
-class cat(dog):
-    @abstractmethod
+class dog(animal):
     def sound(self):
-        pass
-class donkey(cat):
+        print("Dog barks")
+class donkey(dog):
     def sound(self):
         print("Donkey kicked")
 donkey=donkey()
